@@ -14,7 +14,7 @@ class AddCouponIdToOfflineRequestsTable extends Migration
     public function up()
     {
         Schema::table('offline_requests', function (Blueprint $table) {
-            $table->bigInteger('coupon_id')->nullable()->after('order_id');
+            //$table->bigInteger('coupon_id')->nullable()->after('order_id');
         });
     }
 
@@ -26,7 +26,7 @@ class AddCouponIdToOfflineRequestsTable extends Migration
     public function down()
     {
         Schema::table('offline_requests', function (Blueprint $table) {
-            $table->bigInteger('coupon_id')->nullable()->after('order_id');
+            // $table->bigInteger('coupon_id')->nullable()->after('order_id');
         });
     }
 }

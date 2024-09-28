@@ -19,6 +19,7 @@ class CreateOfflineRequestsTable extends Migration
             $table->string('email',191);
             $table->bigInteger('plan_id');
             $table->bigInteger('order_id');
+            $table->bigInteger('coupon_id')->nullable();
             $table->boolean('is_approved')->default(0);
             $table->smallInteger('status')->default(0);
             $table->text('disapprove_reason')->nullable();

@@ -14,6 +14,13 @@ yarn-error.log
 /vendor
 /embranco
 *.zip
-*rutherles.pt.zip
 /*.zip
-
+docker/logs/nginx/*.log
+/docker/logs/nginx/*.log
+docker/logs/nginx/laravel_access.log
+docker/certbot/logs
+composer.lock
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+/storage/debugbar/*
